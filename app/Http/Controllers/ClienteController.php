@@ -125,12 +125,6 @@ class ClienteController extends Controller
          ]);
    }
 
-   public function pesquisarPorMesAno(Request $request){
-    $cliente = Cliente::where('dataNascimento', 'like', '%' . $request->dataNascimento)->get();
-
-   }
-
-
 
    
 }
